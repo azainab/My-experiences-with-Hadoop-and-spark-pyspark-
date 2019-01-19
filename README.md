@@ -7,3 +7,9 @@ Read a python file from spark:
 
 PYTHONSTARTUP=tmp/input/dfa.py pyspark
 
+
+
+
+
+Spark can be run independent of Hadoop, using the Mesos framework
+
