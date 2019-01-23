@@ -22,3 +22,12 @@ In hadoop - spark location
 ls etc/spark
 
 
+>>>>>>>>>>>>>
+
+There are two types of operations you can perform with RDDs:
+
+Image Actions: Operations in this category just return a value from an RDD, such as the count() operation, for example, which returns the count of some data element.
+
+Image Transformations: These operations define a new RDD based on the RDD you’re operating on.
+
+
