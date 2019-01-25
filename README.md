@@ -31,3 +31,11 @@ Image Actions: Operations in this category just return a value from an RDD, such
 Image Transformations: These operations define a new RDD based on the RDD you’re operating on.
 
 
+>>>>>
+hadoop cluster location:
+
+hdfs dfs -df -h /location/of/your/file
+
+output (example): hdfs://hdp01:8020 
+
+
