@@ -38,4 +38,9 @@ hdfs dfs -df -h /location/of/your/file
 
 output (example): hdfs://hdp01:8020 
 
+>>>>
+path of the hdfs directory can be found out making a directory and delting it. It will point to the path of the hdfs
+
+
+
 
