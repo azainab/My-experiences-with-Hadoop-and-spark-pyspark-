@@ -42,5 +42,8 @@ output (example): hdfs://hdp01:8020
 path of the hdfs directory can be found out making a directory and delting it. It will point to the path of the hdfs
 
 
+>>>>>
+In order for spark to see the files we need to add:
 
+export HADOOP_CONF_DIR=$SPARK_HOME/spark-env.sh
 
