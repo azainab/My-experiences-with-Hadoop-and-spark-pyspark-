@@ -32,7 +32,7 @@ Image Transformations: These operations define a new RDD based on the RDD you’
 
 
 >>>>>
-######  hadoop cluster location:
+#####  hadoop cluster location:
 
 hdfs dfs -df -h /location/of/your/file
 
@@ -43,12 +43,12 @@ path of the hdfs directory can be found out making a directory and delting it. I
 
 
 >>>>>
-######  In order for spark to see the files we need to add:
+#####  In order for spark to see the files we need to add:
 
 export HADOOP_CONF_DIR=$SPARK_HOME/spark-env.sh
 
 >>>>>
-######  Error:
+#####  Error:
 
 import xlsxwriter
 Traceback (most recent call last):
@@ -60,7 +60,7 @@ Solution:
 python -m pip install --user xlsxwriter
 
 
-###### Transfer files from desktop/local computer to server:
+##### Transfer files from desktop/local computer to server:
 
 1. sftp user@server
 2. Password:
