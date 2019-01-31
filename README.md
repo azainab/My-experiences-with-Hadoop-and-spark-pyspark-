@@ -47,3 +47,14 @@ In order for spark to see the files we need to add:
 
 export HADOOP_CONF_DIR=$SPARK_HOME/spark-env.sh
 
+>>>>>
+Error:
+
+import xlsxwriter
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ImportError: No module named xlsxwriter
+
+Solution:
+
+python -m pip install --user xlsxwriter
