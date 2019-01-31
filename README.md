@@ -58,3 +58,10 @@ ImportError: No module named xlsxwriter
 Solution:
 
 python -m pip install --user xlsxwriter
+
+
+Transfer files from desktop/local computer to server:
+
+1. sftp user@server
+2. Password:
+3. put -r "path\to\file"
