@@ -65,3 +65,9 @@ python -m pip install --user xlsxwriter
 1. sftp user@server
 2. Password:
 3. put -r "path\to\file"
+
+#### submitting a python file from spark
+
+spark-submit --master spark://Nodename:port location/of/python file/on hdfs/ 1000
+
+
