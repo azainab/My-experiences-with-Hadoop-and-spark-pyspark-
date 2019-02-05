@@ -71,3 +71,10 @@ python -m pip install --user xlsxwriter
 spark-submit --master spark://Nodename:port location/of/python file/on hdfs/ 1000
 
 
+### get file names from a hdfs path
+
+
+cmd = 'hdfs dfs -ls hdfs/path/'.split()
+files = subprocess.check_output(cmd).strip().split('\n')
+for path in files:
+  print(path)
