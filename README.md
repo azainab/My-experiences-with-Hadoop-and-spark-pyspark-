@@ -77,4 +77,4 @@ spark-submit --master spark://Nodename:port location/of/python file/on hdfs/ 100
 cmd = 'hdfs dfs -ls hdfs/path/'.split()
 files = subprocess.check_output(cmd).strip().split('\n')
 for path in files:
-  print(path)
+  print(path) 
