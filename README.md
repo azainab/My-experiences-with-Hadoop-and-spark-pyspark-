@@ -78,3 +78,8 @@ cmd = 'hdfs dfs -ls hdfs/path/'.split()
 files = subprocess.check_output(cmd).strip().split('\n')
 for path in files:
   print(path) 
+
+### - core-site.xml path
+go to the hadoop editor and type
+ls /etc/hadoop/conf
+
