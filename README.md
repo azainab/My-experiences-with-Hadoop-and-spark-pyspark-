@@ -83,3 +83,6 @@ for path in files:
 go to the hadoop editor and type
 ls /etc/hadoop/conf
 
+
+### hadoop-env.sh path
+ls /etc/hadoop/conf
