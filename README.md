@@ -86,3 +86,6 @@ ls /etc/hadoop/conf
 
 ### hadoop-env.sh path
 ls /etc/hadoop/conf
+
+### install a particular version of pyspark
+pip install pyspark==2.1.3
