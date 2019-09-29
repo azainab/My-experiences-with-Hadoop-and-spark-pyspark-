@@ -92,3 +92,12 @@ ls /etc/hadoop/conf
 
 ### install a particular version of pyspark
 pip install pyspark==2.1.3
+
+
+### running spark
+git clone git@github.com:sryza/spark-timeseries.git
+cd spark-timeseries/python
+spark-shell --jars target/sparkts-$VERSION-SNAPSHOT-jar-with-dependencies.jar
+
+output:
+>scala
