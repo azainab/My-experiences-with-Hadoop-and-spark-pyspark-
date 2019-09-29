@@ -101,3 +101,30 @@ spark-shell --jars target/sparkts-$VERSION-SNAPSHOT-jar-with-dependencies.jar
 
 output:
 >scala
+
+### reading a file in spark timesereis
+scala>
+
+import java.sql.Timestamp
+import java.time.{LocalDateTime, ZoneId, ZonedDateTime}
+import com.cloudera.sparkts._
+import com.cloudera.spartks.stats.TimeSeriesStatisticalTests
+import org.apache.spark.{SparkContext, SparkConf}
+import org.apache.spark.sql.{DataFrame, Row, SQLContext}
+import org.apache.spark.sql.types._
+
+def loadObservations(sqlContext: SQLContext, path:String): DataFrame = {
+  val rowRdd = sqlContext.sparkContext.textFile(path).map { line=>
+  val tokens = line.split(',');
+  val dt = ZonedDateTime.of(tokens(10).toInt,tokens(9).toInt, tokens(8).toInt, 0, 0, 0, 0, ZoneId.systemDefault());
+  val SUMERTIME = tokens(2).toDouble;
+  val VAL_AI = tokens(12).toDouble;
+  Row(Timestamp.from(dt.toInstant), ticket, open, high, low, close, volume, adjclose);
+  }
+  val fields = Seq(StructField("timestamp", TimestampType, true),StructField("SUMMERTIME", DoubleType, true), StructField("VAL_AI", DoubleType, True));
+  val schema = StructType(fields);
+  sqlContext.createDataFrame(rowRdd, schema);
+  }
+
+
+
