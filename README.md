@@ -106,7 +106,6 @@ output:
 scala>
 
 import java.sql.Timestamp
-
 import java.time.{LocalDateTime, ZoneId, ZonedDateTime}
 
 import com.cloudera.sparkts._
