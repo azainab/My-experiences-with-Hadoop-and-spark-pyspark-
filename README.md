@@ -143,5 +143,6 @@ def loadObservations(sqlContext: SQLContext, path:String): DataFrame = {
   
   }
 
-
+#### get configuration of spark using pyspark
+sc._conf.getAll()
 
