@@ -60,6 +60,13 @@ Solution:
 python -m pip install --user xlsxwriter
 
 
+#### pip upgrade error
+Command "python setup.py egg_info" failed with error code 1 in /tmp/pip-build-hid_iwzh/pandas/
+
+solution:
+pip3 install --upgrade pip setuptools wheel
+
+
 ##### Transfer files from desktop/local computer to server:
 
 1. sftp user@server
